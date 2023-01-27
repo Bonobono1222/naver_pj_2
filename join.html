@@ -31,36 +31,37 @@
 
     <section class="join-form">
       <div class="form_box">
-        <form id="form_1">
+        <form id="form">
           <label><b>아이디</b><br>
-            <input class="id_box" type="text" title="id" placeholder="@naver.com">
+            <input class="id_box req" type="text" title="id">
+              <div class="id-box-box"><span class="span_n">@naver.com</span></div>
             </input>
-            <span class="span_color">필수 정보입니다.</span>
+            <span class="span_red">필수 정보입니다.</span>
           </label>
         </form>
-        <form id="form_2">
+        <form id="form">
           <label><b>비밀번호</b><br>
-            <input class="pw_box" type="password" title="pw">
+            <input class="pw_box req" type="password" title="pw">
             </input>
           </label>
         </form>
-        <form id="form_3">
+        <form id="form">
           <label><b>비밀번호 재확인</b><br>
-            <input class="pw_box2" type="password" title="pw">
+            <input class="pw_box2 req" type="password" title="pw">
             </input>
           </label>
         </form>
-        <form id="form_4">
+        <form id="form">
           <label><b>이름</b><br>
-            <input class="name" type="text" title="name">
+            <input class="name req" type="text" title="name">
             </input>
           </label>
         </form>
-        <form id="form_5">
+        <form id="form">
           <label><b>생년월일</b><br>
-            <input class="year" type="text" placeholder="년(4자)">
+            <input class="year req" type="text" placeholder="년(4자)" maxlength="4">
             </input>
-            <select class="month" placeholder="월">
+            <select class="month req" placeholder="월">
               <option value="" selected disabled hidden>월</option>
               <!--selected 기본으로 선택되어 보여짐 disabled 선택 못하는 항목으로 hidden 선택 항목에 안 보이게-->
               <option value="">1월</option>
@@ -76,43 +77,61 @@
               <option value="">11월</option>
               <option value="">12월</option>
             </select>
-            <input class="day" type="text" placeholder="일">
+            <input class="day req" type="text" placeholder="일" maxlength="2">
             </input><br>
             <span class="span_color">태어난 년도 4자리를 정확하게 입력하세요.</span>
           </label>
         </form>
-        <form id="form_6">
+        <form id="form">
           <label><b>성별</b><br>
-            <input class="sex" type="text" title="성별" placeholder="남자">
-            </input>
-            <input class="sex" type="text" title="성별" placeholder="여자">
-            </input>
-            <input class="sex" type="text" title="성별" placeholder="선택안함">
-            </input>
+            <div class="sex_box req">
+              <input  class="sex1" type="radio"><div class="sex_1">남자</div></input>
+              <input class="sex2" type="radio"><div class="sex_2">여자</div></input>
+              <input class="sex3" type="radio"><div class="sex_3">선택안함</div></input>
+            </div>
           </label>
         </form>
-        <form id="form_7">
+        <form id="form">
           <label><b>본인 확인 이메일</b><span class="span_s">(선택)</span><br>
-            <input class="email" type="email" title="email" placeholder="선택입력">
+            <input class="email req" type="email" title="email" placeholder="선택입력">
             </input>
           </label>
         </form>
-        <form id="form_8">
+        <form id="form">
           <label><b>휴대전화</b><br>
-            <select class="tell" type="tell" title="휴대전화 앞자리 선택">
+            <select class="tell req" type="tell" title="휴대전화 앞자리 선택">
               <option value="대한민국" selected disabled hidden>대한민국 +82</option>
               <option value="010">010</option>
               <option value="011">011</option>
               <option value="019">019</option>
             </select>
-            <input class="tell2" type="tell" title="tel1">
+            <input class="tell2 req" type="tell" title="tell" placeholder="전화번호 입력">
             </input>
-            <input class="tell3" type="tell" title="tel1">
+            <button class="num" type="button">인증번호 받기</button>
+            <input class="tell3 req" type="tell" title="tell" placeholder="인증번호를 입력하세요.">
             </input>
           </label>
         </form>
+        <form id="form">
+          <label><b>주소</b><br>
+            <input class="tell2 req" type="text" title="post" placeholder="우편번호">
+            </input>
+            <button class="num">우편번호 찾기</button>
+            <input class="post req" type="text" title="post" placeholder="도로명 주소">
+            </input>
+            <input class="post req" type="text" title="post" placeholder="지번 주소">
+            </input>
+            <input class="post req" type="text" title="post" placeholder="상세 주소">
+            </input>
+            <input class="post req" type="text" title="post" placeholder="참고 항목">
+          </input>
+          </label>
+        </form>
+        <form id="form">
+            <button class="submit" type="submit" title="submit">가입하기</button>
+          </label>
+        </form>
       </div>
-      
     </section>
   </div>
   <script src="./js/script2.js"></script>
