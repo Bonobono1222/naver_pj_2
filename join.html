@@ -4,9 +4,117 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>01월 27일 네이버 회원가입 폼</title>
+  <link rel="stylesheet" href="./css/style2.css">
+  <script src="https://kit.fontawesome.com/522c2b7a73.js" crossorigin="anonymous"></script>
+  <!--fontawesome-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!--jquery-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!--favicon-->
 </head>
 <body>
-  <h1>전송완료!</h1>
+  <div class="wrapper">
+    <header class="global-header">
+      <h1 class="logo">
+        <a href="http://naver.com">
+          <img src="./images/logo.png" alt="네이버 로고">
+        </a>
+      </h1>
+    </header>
+
+    <section class="join-form">
+      <div class="form_box">
+        <form id="form_1">
+          <label><b>아이디</b><br>
+            <input class="id_box" type="text" title="id" placeholder="@naver.com">
+            </input>
+            <span class="span_color">필수 정보입니다.</span>
+          </label>
+        </form>
+        <form id="form_2">
+          <label><b>비밀번호</b><br>
+            <input class="pw_box" type="password" title="pw">
+            </input>
+          </label>
+        </form>
+        <form id="form_3">
+          <label><b>비밀번호 재확인</b><br>
+            <input class="pw_box2" type="password" title="pw">
+            </input>
+          </label>
+        </form>
+        <form id="form_4">
+          <label><b>이름</b><br>
+            <input class="name" type="text" title="name">
+            </input>
+          </label>
+        </form>
+        <form id="form_5">
+          <label><b>생년월일</b><br>
+            <input class="year" type="text" placeholder="년(4자)">
+            </input>
+            <select class="month" placeholder="월">
+              <option value="" selected disabled hidden>월</option>
+              <!--selected 기본으로 선택되어 보여짐 disabled 선택 못하는 항목으로 hidden 선택 항목에 안 보이게-->
+              <option value="">1월</option>
+              <option value="">2월</option>
+              <option value="">3월</option>
+              <option value="">4월</option>
+              <option value="">5월</option>
+              <option value="">6월</option>
+              <option value="">7월</option>
+              <option value="">8월</option>
+              <option value="">9월</option>
+              <option value="">10월</option>
+              <option value="">11월</option>
+              <option value="">12월</option>
+            </select>
+            <input class="day" type="text" placeholder="일">
+            </input><br>
+            <span class="span_color">태어난 년도 4자리를 정확하게 입력하세요.</span>
+          </label>
+        </form>
+        <form id="form_6">
+          <label><b>성별</b><br>
+            <input class="sex" type="text" title="성별" placeholder="남자">
+            </input>
+            <input class="sex" type="text" title="성별" placeholder="여자">
+            </input>
+            <input class="sex" type="text" title="성별" placeholder="선택안함">
+            </input>
+          </label>
+        </form>
+        <form id="form_7">
+          <label><b>본인 확인 이메일</b><span class="span_s">(선택)</span><br>
+            <input class="email" type="email" title="email" placeholder="선택입력">
+            </input>
+          </label>
+        </form>
+        <form id="form_8">
+          <label><b>휴대전화</b><br>
+            <select class="tell" type="tell" title="휴대전화 앞자리 선택">
+              <option value="대한민국" selected disabled hidden>대한민국 +82</option>
+              <option value="010">010</option>
+              <option value="011">011</option>
+              <option value="019">019</option>
+            </select>
+            <input class="tell2" type="tell" title="tel1">
+            </input>
+            <input class="tell3" type="tell" title="tel1">
+            </input>
+          </label>
+        </form>
+      </div>
+      
+    </section>
+  </div>
+  <script src="./js/script2.js"></script>
 </body>
 </html>
